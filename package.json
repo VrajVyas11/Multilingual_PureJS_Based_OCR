@@ -1,14 +1,11 @@
 {
-  "name": "purejs-ocr",
+  "name": "multilingual_purejs_ocr",
   "version": "1.0.0",
-  "description": "Pure JavaScript OCR library with multilingual support - no Python dependencies required!",
+  "description": "Pure JavaScript OCR library with multilingual support using ONNX Runtime Node - no Python dependencies required!",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node examples/basic.js",
-    "example:basic": "node examples/basic.js",
-    "example:advanced": "node examples/advanced.js",
-    "example:custom-models": "node examples/custom-models.js"
+    "test": "node examples.js"
   },
   "keywords": [
     "ocr",
@@ -22,6 +19,7 @@
     "computer-vision",
     "image-processing",
     "onnx",
+    "onnxruntime-node",
     "pure-js",
     "no-python"
   ],
@@ -29,12 +27,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vrajvyas11/purejs-ocr.git"
+    "url": "https://github.com/VrajVyas11/Multilingual_PureJS_Based_OCR.git"
   },
   "bugs": {
-    "url": "https://github.com/vrajvyas11/purejs-ocr/issues"
+    "url": "https://github.com/VrajVyas11/Multilingual_PureJS_Based_OCR/issues"
   },
-  "homepage": "https://github.com/vrajvyas11/purejs-ocr#readme",
+  "homepage": "https://github.com/VrajVyas11/Multilingual_PureJS_Based_OCR#readme",
   "engines": {
     "node": ">=14.0.0"
   },
