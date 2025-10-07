@@ -1,0 +1,55 @@
+{
+  "name": "purejs-ocr",
+  "version": "1.0.0",
+  "description": "Pure JavaScript OCR library with multilingual support - no Python dependencies required!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node examples/basic.js",
+    "example:basic": "node examples/basic.js",
+    "example:advanced": "node examples/advanced.js",
+    "example:custom-models": "node examples/custom-models.js"
+  },
+  "keywords": [
+    "ocr",
+    "optical-character-recognition",
+    "text-detection",
+    "text-recognition",
+    "paddleocr",
+    "multilingual",
+    "javascript",
+    "nodejs",
+    "computer-vision",
+    "image-processing",
+    "onnx",
+    "pure-js",
+    "no-python"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrajvyas11/purejs-ocr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vrajvyas11/purejs-ocr/issues"
+  },
+  "homepage": "https://github.com/vrajvyas11/purejs-ocr#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@techstark/opencv-js": "^4.9.0-release.3",
+    "js-clipper": "^1.0.1",
+    "onnxruntime-node": "^1.23.0",
+    "sharp": "^0.34.4",
+    "tiny-invariant": "^1.3.3"
+  },
+  "devDependencies": {},
+  "peerDependencies": {}
+}
