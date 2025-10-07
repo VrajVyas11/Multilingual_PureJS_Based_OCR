@@ -1,7 +1,7 @@
 // examples/advanced.js
 import Ocr from './index.js';
 
-async function basicExample() {
+async function basicExample(imagePath) {
     console.log('🎯 PureJS OCR - Basic Example\n');
     
     try {
@@ -15,8 +15,6 @@ async function basicExample() {
         
         console.log('✅ OCR instance created successfully!\n');
         
-        // Process an image
-        const imagePath = process.argv[2] || './bs.jpeg';
         console.log(`📸 Processing image: ${imagePath}\n`);
         
         const result = await ocr.detect(imagePath);
@@ -53,7 +51,7 @@ async function basicExample() {
     }
 }
 
-async function advancedExample() {
+async function advancedExample(imagePath) {
     console.log('🚀 PureJS OCR - Advanced Configuration Example\n');
     
     try {
@@ -99,7 +97,6 @@ async function advancedExample() {
         
         console.log('✅ OCR configured!\n');
         
-        const imagePath = process.argv[2] || './bs.jpeg';
         console.log(`📸 Processing: ${imagePath}\n`);
         
         // Process with grouping
@@ -157,5 +154,25 @@ async function advancedExample() {
         process.exit(1);
     }
 }
-basicExample()
-advancedExample()
+
+// Parse command-line arguments
+const args = process.argv.slice(2);
+const imagePath = args.find(arg => !arg.startsWith('--')) || './bs.jpeg';
+const runBasic = args.includes('--basic');
+const runAdvanced = args.includes('--advanced');
+
+// Run examples based on flags
+(async () => {
+    if (runBasic) {
+        await basicExample(imagePath);
+    }
+    if (runAdvanced) {
+        await advancedExample(imagePath);
+    }
+    if (!runBasic && !runAdvanced) {
+        // Default: run both
+        await basicExample(imagePath);
+        console.log('\n' + '=' .repeat(60));  // Separator between examples
+        await advancedExample(imagePath);
+    }
+})();

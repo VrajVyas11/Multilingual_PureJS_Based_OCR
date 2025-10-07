@@ -1,5 +1,7 @@
 # Multilingual PureJS OCR 🚀
 
+[![npm version](https://badge.fury.io/js/multilingual-purejs-ocr.svg)](https://www.npmjs.com/package/multilingual-purejs-ocr)
+
 A powerful onnxruntime-node based, **pure JavaScript OCR library** that works directly in Node.js - **no Python dependencies required!** Extract text from images with industry-leading accuracy using PaddleOCR models.
 
 ## ✨ Features

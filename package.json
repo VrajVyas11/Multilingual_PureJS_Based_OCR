@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node examples.js"
+    "test": "node example.js",
+    "example:basic": "node example.js --basic",
+    "example:advanced": "node example.js --advanced"
   },
   "keywords": [
     "ocr",
@@ -23,7 +25,7 @@
     "pure-js",
     "no-python"
   ],
-  "author": "Your Name",
+  "author": "Vraj Vyas <vyasvraj92@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -38,8 +40,12 @@
   },
   "files": [
     "index.js",
+    "example.js",
+    "bs.jpeg",
+    "models/",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "types.d.ts"
   ],
   "dependencies": {
     "@techstark/opencv-js": "^4.9.0-release.3",
