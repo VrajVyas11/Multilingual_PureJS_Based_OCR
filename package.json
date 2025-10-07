@@ -1,5 +1,5 @@
 {
-  "name": "multilingual_purejs_ocr",
+  "name": "multilingual-purejs-ocr",
   "version": "1.0.0",
   "description": "Pure JavaScript OCR library with multilingual support using ONNX Runtime Node - no Python dependencies required!",
   "main": "index.js",
