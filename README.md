@@ -14,6 +14,7 @@ A powerful onnxruntime-node based, **pure JavaScript OCR library** that works di
 - 🎨 **Smart Text Grouping**: Automatically groups text into paragraphs
 - 🔌 **Bring Your Own Models**: Use custom ONNX models
 - ⚡ **Production Ready**: Built with performance and reliability in mind
+- 🚀 **Plug and Play**: All models and dictionaries included - just install and run!
 
 ## 📥 Installation
 
@@ -254,9 +255,9 @@ console.log(languages);
 | `ko` | Korean | PP-OCRv4 (Korean dict) |
 | `latin` | Latin (PT, ES, FR, etc.) | PP-OCRv3 |
 
-## 📁 Required Models
+## 📁 Included Models
 
-The package expects the following model structure:
+The package ships with all required models and dictionaries for plug-and-play usage:
 
 ```
 models/
@@ -272,7 +273,7 @@ models/
 └── latin_dict.txt                      # Latin dictionary
 ```
 
-**Note**: Models are not included in the package. You need to provide your own ONNX models converted from PaddleOCR.
+No additional setup required - everything is ready to use out of the box!
 
 ## 🔧 Custom Models
 
